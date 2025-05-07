@@ -20,7 +20,7 @@ const server = http.createServer(app);
 
 const io = new SocketIOServer(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://facility.smhos.org",
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
@@ -30,7 +30,7 @@ const io = new SocketIOServer(server, {
 });
 
 app.use(cors({
-  origin: "http://localhost:3000",
+  origin: "https://facility.smhos.org",
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
